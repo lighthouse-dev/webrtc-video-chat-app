@@ -2,53 +2,53 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
-    <title>Hand Signaling</title>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/base.css">
+  <title>Hand Signaling</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-    <div id="wrap">
-        <div id="video">
-            <div id="remoteArea">
-                <video id="remote_video" autoplay></video>
-            </div>
+  <div id="wrap">
+    <div id="video">
+      <div id="remoteArea">
+        <video id="remote_video" autoplay></video>
+      </div>
 
-            <div id="localArea">
-                <div id="lovalVideo">
-                    <video id="local_video" autoplay></video>
-                </div>
-                <div id="videoActions">
-                    <div id="center">
-                        <input type="button" value="Start Video" class="videoBtn" onclick="startVideo();">
-                        <input type="button" value="Stop Video" class="videoBtn" onclick="stopVideo();">
-                        <input type="button" value="Connect" class="videoBtn" onclick="connect();">
-                        <input type="button" value="Hang Up" class="videoBtn" onclick="hangUp();">
-                    </div>
-                </div>
-            </div>
-
-            <p style="display:none;">SDP to send:<br />
-                <textarea id="text_for_send_sdp" rows="5" cols="60" readonly="readonly">SDP to send</textarea>
-            </p>
-            <p style="display:none;">SDP to receive:&nbsp;
-                <button type="button" onclick="onSdpText();">Receive remote SDP</button><br />
-                <textarea id="text_for_receive_sdp" rows="5" cols="60"></textarea>
-            </p>
+      <div id="localArea">
+        <div id="lovalVideo">
+          <video id="local_video" autoplay></video>
         </div>
-
-        <div id="chat">
-            <div id="chatRoom"></div>
-            <div id="inputMsg">
-                <input id='name' type="text" placeholder="名前入力">
-                <input id='message' type="text" placeholder="メッセージを入力し、[Enter]キーを押してください">
-                <button id='send'>Enter</button>
-            </div>
+        <div id="videoActions">
+          <div id="center">
+            <input type="button" value="Start Video" class="videoBtn" onclick="startVideo();">
+            <input type="button" value="Stop Video" class="videoBtn" onclick="stopVideo();">
+            <input type="button" value="Connect" class="videoBtn" onclick="connect();">
+            <input type="button" value="Hang Up" class="videoBtn" onclick="hangUp();">
+          </div>
         </div>
+      </div>
+
+      <p style="display:none;">SDP to send:<br />
+        <textarea id="text_for_send_sdp" rows="5" cols="60" readonly="readonly">SDP to send</textarea>
+      </p>
+      <p style="display:none;">SDP to receive:&nbsp;
+        <button type="button" onclick="onSdpText();">Receive remote SDP</button><br />
+        <textarea id="text_for_receive_sdp" rows="5" cols="60"></textarea>
+      </p>
     </div>
+
+    <div id="chat">
+      <div id="chatRoom"></div>
+      <div id="inputMsg">
+        <input id='name' type="text" placeholder="名前入力">
+        <input id='message' type="text" placeholder="メッセージを入力し、[Enter]キーを押してください">
+        <button id='send'>Enter</button>
+      </div>
+    </div>
+  </div>
 </body>
 
-    <!-- 順番変えないように注意！ -->
-    <script type="text/javascript" src="./js/webrtc.js"></script>
-    <script type="text/javascript" src="./js/chat.js"></script>
+<!-- 順番変えないように注意！ -->
+<script type="text/javascript" src="./js/webrtc.js"></script>
+<script type="text/javascript" src="./js/chat.js"></script>
 </html>
