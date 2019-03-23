@@ -1,0 +1,126 @@
+#wrap {
+  background-color: #f0f0f0;
+}
+
+/* ビデオ */
+#video {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#remoteArea {
+  background-color: #f0f0f0;
+  height: 65%;
+}
+#remote_video {
+  width: 100%;
+  height: 100%;
+}
+
+#localArea {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 35%;
+}
+
+#local_video {
+  width: 100%;
+  height: 100%;
+}
+
+#lovalVideo {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#videoActions {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.videoBtn {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  color: #fff;
+  background-color: #148ba8;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#center {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* チャット */
+#chat {
+  background-color: #f4fcff;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#chatRoom {
+  width: 100%;
+  height: 93%;
+  padding: 10px 10px 0 10px;
+  font-size: 18px;
+  color: #424242;
+  font-weight: bold;
+  overflow:scroll;
+}
+
+#inputMsg {
+  width:100%;
+  height: 5%;
+}
+
+#inputMsg input {
+  font-size: 15px;
+}
+
+#name {
+  float: left;
+  padding-left: 5px;
+  margin-left: 5px;
+  width: 20%;
+  height: 100%;
+  border: none;
+  border-radius: 7px 7px 7px 7px;
+}
+
+#message {
+  float: left;
+  padding-left: 5px;
+  margin-left: 2px;
+  width: 69%;
+  height: 100%;
+  border: none;
+  border-radius: 7px 0px 0px 7px;
+}
+
+#send {
+  float: left;
+  width: 10%;
+  height: 100%;
+  color: #fff;
+  background-color: #148ba8;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 0px 7px 7px 0px;
+}
